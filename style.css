@@ -1,0 +1,112 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    
+}
+
+@font-face{
+font-family: 'SkylanderFont';
+src:url(font/pincoyablack.otf)    
+}
+
+
+.navbar {
+    background: #333;
+    padding: 1rem 0;
+    margin-left: 0;
+}
+
+.title {
+    text-align: center;
+    font-size: 2rem;
+    margin: 1rem 0;
+    padding: top 20px;
+}
+
+.search-container {
+    display: flex;
+    justify-content: center;
+    margin: 1rem 0;
+}
+
+.search-input {
+    padding: 0.5rem;
+    margin: 1rem;
+    width: 50%;
+    border-radius: 15px;
+}
+
+.element-container {
+    display: flex;
+    justify-content: center;
+    margin: 1rem 0;
+}
+
+.element-symbol:hover {
+transform: scale(1.1);
+}
+
+.element-symbol {
+    width: 50px;
+    height: 50px;
+    margin: 0 10px;
+}
+
+
+/*cards */
+.skylander-wrapper {
+    padding: 20px;
+}
+
+.skylander-grid {
+    display:grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 15px;
+}
+
+.skylander-card {
+    border: 2px solid #ccc;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+.skylander-card:hover {
+  transform: scale(1.05);
+}
+
+
+.skylander-image {
+    width: 100%;
+    height: auto;
+}
+
+.skylander-title {
+    text-align: center;
+    font-size: 1.2rem;
+    margin: 0.5rem 0;
+    
+}
+
+
+
+.skylander-element {
+    text-align: center;
+    font-size: 1rem;
+    margin: 0.5rem 0;
+}
+
+.skylander-series {
+    text-align: center;
+    font-size: 1rem;
+    margin: 0.5rem 0;
+    
+}
+
+.collected {
+    filter: grayscale(100%);
+}
+
+.not-collected {
+    filter: grayscale(0%);
+}
